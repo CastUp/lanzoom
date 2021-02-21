@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindFriends">
+
+    <include
+        android:id="@+id/Actionbar_findfriends"
+        layout="@layout/main_action_bar"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_Adsens"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/Actionbar_findfriends">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8175375039939984/7499603921">
+            </com.google.android.gms.ads.AdView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Text_Adsens"
+        android:layout_below="@id/Card_Adsens"
+        android:layout_width="match_parent"
+        android:background="#CB607D8B"
+        android:elevation="3dp"
+        android:text="@string/Connect_findfriends"
+        android:gravity="center|start"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:textStyle="italic"
+        android:fontFamily="@font/new_font"
+        android:padding="4dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recycle_Users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Text_Adsens"
+        android:padding="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

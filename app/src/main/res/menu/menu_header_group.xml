@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+
+        android:id="@+id/Profile_Header"
+        android:title="@string/Profile_HeaderUsers" />
+
+    <item
+
+        android:id="@+id/Ban_Header"
+        android:title="@string/Ban_HeaderUsers"/>
+
+
+</menu>

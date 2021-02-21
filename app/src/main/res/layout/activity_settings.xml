@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#efefef"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+
+    <include
+
+        android:id="@+id/SettingTool"
+        layout="@layout/main_action_bar" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_Adsens_Settings"
+        android:layout_below="@id/SettingTool"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8175375039939984/7499603921">
+            </com.google.android.gms.ads.AdView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/UptateInfo"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/Card_Adsens_Settings"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="#1634DF"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Update personal information"
+                android:singleLine="true"
+                android:gravity="start|center"
+                android:textColor="#777272"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/HiddenInfo"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/UptateInfo"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="#F00909"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hidden information"
+                android:singleLine="true"
+                android:gravity="start|center"
+                android:textColor="#777272"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/DeletedUser"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/HiddenInfo"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="#050505"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Delete Account"
+                android:singleLine="true"
+                android:gravity="start|center"
+                android:textColor="#777272"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

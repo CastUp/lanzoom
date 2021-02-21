@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDF1EEEE"
+    tools:context=".ChatsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_Veiw_Chating"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/Relative_chating_fragment"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ImageProfile_ChatingFragment"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:src="#fff"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="2dp"/>
+
+
+            <LinearLayout
+                android:layout_toEndOf="@+id/ImageProfile_ChatingFragment"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/Status_Chating_Fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/new_font"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="#646262"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/State_Chating_Fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="14dp"
+                    android:textColor="#ADABAB"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Image_State_Chating_Fragment"
+                    android:layout_width="14dp"
+                    android:layout_height="19dp"
+                    android:src="#fff"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="1dp"
+                    app:civ_border_color="#00FFD600"
+                    app:civ_border_width="1dp"/>
+
+                 </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/Recycle_Chating_Fragment"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Card_Veiw_Chating" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

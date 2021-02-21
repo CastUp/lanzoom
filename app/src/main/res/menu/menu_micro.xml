@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/Word"
+        android:icon="@drawable/ic_word"
+        android:title="Word" />
+
+    <item
+
+        android:id="@+id/Excel"
+        android:icon="@drawable/ic_excel"
+        android:title="Excel" />
+
+
+
+    <item
+
+        android:id="@+id/PowerPoint"
+        android:icon="@drawable/ic_powerpoint"
+        android:title="PowerPoint" />
+
+</menu>

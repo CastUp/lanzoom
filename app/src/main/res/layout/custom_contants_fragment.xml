@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ProfileImage_Contants_Fragment"
+        android:layout_width="70dp"
+        android:layout_marginTop="-5dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:padding="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_color="#DD51A71B"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/FullName_ContantsFragment"
+        android:layout_toEndOf="@+id/ProfileImage_Contants_Fragment"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/new_font"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/Status_ContantsFragment"
+        android:layout_toEndOf="@+id/ProfileImage_Contants_Fragment"
+        android:layout_below="@id/FullName_ContantsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:textColor="#7C7A7A"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/State_ContantsFragment"
+        android:layout_toEndOf="@+id/ProfileImage_Contants_Fragment"
+        android:layout_below="@id/Status_ContantsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="#62C722"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Image_State_ContantsFragment"
+        android:layout_below="@id/Status_ContantsFragment"
+        android:layout_toEndOf="@id/State_ContantsFragment"
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="15dp"
+        android:visibility="gone"
+        android:src="#FAFAFA"
+        app:civ_border_color="#fff"
+        app:civ_border_width="1dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/State_ContantsFragment"
+        android:layout_toEndOf="@id/ProfileImage_Contants_Fragment"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCACA"/>
+
+    <ImageView
+        android:id="@+id/ContantsMenu"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_menuicon"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

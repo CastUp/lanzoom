@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/Editprivate"
+        android:title="Edit"/>
+
+
+    <item
+
+        android:id="@+id/DeletedprivateMe"
+        android:title="Delete for me"/>
+
+    <item
+
+        android:id="@+id/DeletedprivateAll"
+        android:title="Delete everyone"/>
+
+
+</menu>

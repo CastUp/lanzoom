@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+
+        android:id="@+id/Appearance"
+        android:icon="@drawable/changes_state"
+        android:title="@string/Stateappearance_navigation_main" />
+
+    <item
+
+        android:id="@+id/Profile"
+        android:icon="@drawable/ic_contacts"
+        android:title="@string/Profile_navigation_main" />
+
+    <item
+
+        android:id="@+id/Request"
+        android:icon="@drawable/requests"
+        android:title="@string/Requests_navigation_main" />
+
+    <item
+
+        android:id="@+id/SentRequst"
+        android:icon="@drawable/send_requsest"
+        android:title="@string/SentRequests_navigation_main" />
+
+    <item
+
+        android:id="@+id/Settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/Settings_navigation_main" />
+
+
+    <item
+
+        android:id="@+id/Signout"
+        android:icon="@drawable/ic_sign_out_option"
+        android:title="@string/Signout_navigation_main" />
+
+</menu>

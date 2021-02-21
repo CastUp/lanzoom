@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageReceiver"
+        android:layout_alignParentStart="true"
+        android:elevation="3dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#fff"
+        android:layout_width="40dp"
+        android:layout_height="50dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_Receiver_Private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ImageReceiver"
+        android:layout_marginBottom="4dp"
+        app:contentPadding="5dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp">
+
+        <RelativeLayout
+            android:id="@+id/Receiver_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Surname_Receiver_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HAZEM"
+            android:padding="1dp"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_margin="1dp"
+            android:textColor="#304FFE"/>
+
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+
+            android:id="@+id/Text_Receiver_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="receiver message here "
+            android:layout_below="@id/Surname_Receiver_private"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:trimExpandedText="@string/read_less"
+            app:trimCollapsedText="@string/read_more"
+            app:trimMode="trimModeLength"
+            app:trimLength="200"
+            app:colorClickableText="#747474"
+            app:emojiconSize="28sp" />
+
+        <TextView
+            android:id="@+id/Date_Receiver_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hhhhhh"
+            android:padding="1dp"
+            android:textSize="11dp"
+            android:layout_alignParentEnd="true"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_margin="1dp"
+            android:textColor="#9C9999"/>
+
+        <TextView
+            android:id="@+id/Time_Receiver_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hhhhhhh"
+            android:padding="1dp"
+            android:layout_marginTop="2dp"
+            android:textSize="11dp"
+            android:layout_toStartOf="@id/Date_Receiver_private"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_margin="1dp"
+            android:textColor="#FF6D00"/>
+
+            <TextView
+                android:id="@+id/EditedReceiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edited"
+                android:textSize="10dp"
+                android:textColor="#9C9B9B"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/Text_Receiver_private"/>
+
+        <ImageView
+            android:id="@+id/photo_Receiver_private"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@id/Surname_Receiver_private"
+            android:src="@drawable/back_group2"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"/>
+
+            <TextView
+
+                android:id="@+id/Download_photo_Receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/photo_Receiver_private"
+                android:text="Download"
+                android:textColor="#6200EA"
+                android:textStyle="bold"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/View_photo_Receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Download_photo_Receiver"
+                android:layout_below="@id/photo_Receiver_private"
+                android:text="View"
+                android:layout_marginStart="10dp"
+                android:textColor="#6200EA"
+                android:textStyle="bold"
+                android:padding="3dp"/>
+
+            <RelativeLayout
+                android:id="@+id/RelativefilsReceiver"
+                android:layout_below="@id/Surname_Receiver_private"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#EE607D8B"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/photo_filsReceiver"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/textfilsReceiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_toEndOf="@id/photo_filsReceiver"
+                    android:layout_toStartOf="@id/Dwonloading_filsReceiver"
+                    android:fontFamily="@font/new_font"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:gravity="start|bottom"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/textR"
+                    android:layout_below="@id/textfilsReceiver"
+                    android:layout_width="match_parent"
+                    android:layout_toEndOf="@id/photo_filsReceiver"
+                    android:layout_toStartOf="@id/Dwonloading_filsReceiver"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="#fff"
+                    android:text="ـــــــــــــــــــــــ"
+                    android:textColor="#fff"
+                    android:layout_height="1dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Dwonloading_filsReceiver"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_downloading"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#CFCFCF"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageSender"
+        android:layout_alignParentEnd="true"
+        android:elevation="3dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#E0FFC7"
+        android:layout_width="40dp"
+        android:layout_height="50dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_Sender_Private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/ImageSender"
+        android:layout_marginBottom="4dp"
+        app:contentPadding="5dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#E0FFC7"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-5dp">
+
+        <RelativeLayout
+            android:id="@+id/Sender_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Surname_Sender_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HAZEM"
+                android:layout_alignParentEnd="true"
+                android:padding="1dp"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:textColor="#304FFE"/>
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/Text_Sender_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="receiver message here "
+                android:layout_below="@id/Surname_Sender_private"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:trimExpandedText="@string/read_less"
+                app:trimCollapsedText="@string/read_more"
+                app:trimMode="trimModeLength"
+                app:trimLength="200"
+                app:colorClickableText="#747474"
+                app:emojiconSize="28sp" />
+
+            <TextView
+                android:id="@+id/Date_Sender_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ddddddd"
+                android:padding="1dp"
+                android:textSize="11dp"
+                android:layout_alignParentStart="true"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:textColor="#9C9999"/>
+
+            <TextView
+                android:id="@+id/Time_Sender_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hhhhhh"
+                android:padding="1dp"
+                android:layout_marginTop="2dp"
+                android:textSize="11dp"
+                android:layout_toEndOf="@id/Date_Sender_private"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:textColor="#FF6D00"/>
+
+            <TextView
+                android:id="@+id/EditedSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edited"
+                android:textSize="10dp"
+                android:textColor="#9C9B9B"
+                android:layout_marginStart="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/Text_Sender_private"/>
+
+            <ImageView
+                android:id="@+id/photo_Sender_private"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@id/Surname_Sender_private"
+                android:src="@drawable/back_group2"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+
+                android:id="@+id/Download_photo_Sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/photo_Sender_private"
+                android:text="Download"
+                android:textColor="#6200EA"
+                android:textStyle="bold"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/View_photo_Sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Download_photo_Sender"
+                android:layout_below="@id/photo_Sender_private"
+                android:text="View"
+                android:layout_marginStart="10dp"
+                android:textColor="#6200EA"
+                android:textStyle="bold"
+                android:padding="3dp"/>
+
+            <RelativeLayout
+                android:id="@+id/RelativefilsSender"
+                android:layout_below="@id/Surname_Sender_private"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#EE607D8B"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/photo_filsSender"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/textfilsSender"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_toEndOf="@id/photo_filsSender"
+                    android:layout_toStartOf="@id/Dwonloading_filsSender"
+                    android:fontFamily="@font/new_font"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:gravity="start|bottom"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/textS"
+                    android:layout_below="@id/textfilsSender"
+                    android:layout_width="match_parent"
+                    android:layout_toEndOf="@id/photo_filsSender"
+                    android:layout_toStartOf="@id/Dwonloading_filsSender"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="#fff"
+                    android:text="ـــــــــــــــــــــــ"
+                    android:textColor="#fff"
+                    android:layout_height="1dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Dwonloading_filsSender"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_downloading"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#CFCFCF"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

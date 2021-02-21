@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/REL_F"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/Relative_Layout_list_Users"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/card_custom_user_list"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            android:id="@+id/UserName_Custom_list_Users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:fontFamily="@font/new_font"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#258bd6"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/Status_Custom_list_Users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_below="@id/UserName_Custom_list_Users"
+            android:layout_marginTop="3dp"
+            android:padding="2dp"
+            android:textSize="15sp"
+            android:textColor="#676868"
+            android:layout_marginEnd="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/Linear_State"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Status_Custom_list_Users"
+            android:layout_marginTop="3dp"
+            android:padding="3dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="5dp">
+
+            <TextView
+                android:id="@+id/State_Custom_list_Users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#62C722"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Image_State_list_users"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"
+                android:src="#FAFAFA"
+                app:civ_border_color="#fff"
+                app:civ_border_width="1dp"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ProfileImage_Custom_List_Users"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/profile_image"
+        app:civ_border_color="#00B8D4"
+        app:civ_border_width="2dp" />
+</RelativeLayout>

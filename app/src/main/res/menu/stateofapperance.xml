@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/online"
+
+        android:title="Online" />
+
+    <item
+
+        android:id="@+id/busy"
+        android:title="Busy" />
+
+    <item
+
+        android:id="@+id/meeting"
+        android:title="In a meeting" />
+
+    <item
+
+        android:id="@+id/work"
+        android:title="At work" />
+
+    <item
+
+        android:id="@+id/school"
+        android:title="At School" />
+
+    <item
+
+        android:id="@+id/appearOffline"
+        android:title="Appear Offline" />
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "176934843929",
+    "firebase_url": "https://castup-6f01e.firebaseio.com",
+    "project_id": "castup-6f01e",
+    "storage_bucket": "castup-6f01e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176934843929:android:d8f86da09ae772d0671c88",
+        "android_client_info": {
+          "package_name": "com.castup.castup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176934843929-fcp248i1l98m15ejleadk32rk3699gj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.castup.castup",
+            "certificate_hash": "f2271b825cbcd31709d77b53d4b6c70bc31793b5"
+          }
+        },
+        {
+          "client_id": "176934843929-vvil3634fe4huq4k59g0em3e18mpsv2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8VxwwrsT-UhFDC-49BYafolgrk80iRD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176934843929-vvil3634fe4huq4k59g0em3e18mpsv2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

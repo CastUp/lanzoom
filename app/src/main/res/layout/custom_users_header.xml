@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/Layout_Custom_Header"
+    android:layout_marginBottom="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ImageUserHeader"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:layout_marginEnd="5dp"
+            android:elevation="3dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#B3B1B6"
+            app:civ_border_overlay="false"
+            android:layout_width="65dp"
+            android:layout_height="65dp"/>
+
+        <LinearLayout
+            android:id="@+id/LeanerHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/ImageUserHeader"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true">
+
+
+            <TextView
+                android:id="@+id/SurNameUserHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:fontFamily="@font/new_font"
+                android:layout_marginStart="1dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/CountryUsersHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:maxLines="2"
+                android:gravity="start"
+                android:textSize="13sp"
+                android:fontFamily="@font/new_font"
+                android:layout_marginStart="1dp"
+                android:textColor="#D50000"
+                android:text=""/>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/LeanerHeader"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFAB00"/>
+        </LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/navigation_cover"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cover1" />
+
+    <ImageView
+        android:id="@+id/changecover"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_nvegation_camera"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/navigation_Photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/navigation_cover"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="-55dp"
+        android:src="@drawable/profile_image" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/navigation_camera"
+        android:layout_toEndOf="@+id/navigation_Photo"
+        android:layout_below="@id/navigation_cover"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="-26dp"
+        android:src="@drawable/ic_photo_camera_novitication"
+        app:civ_fill_color="#64DD17"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <TextView
+        android:id="@+id/navigation_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_Photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/new_font"
+        android:textColor="#0A0A0A"
+        android:textSize="17sp"
+        android:text=""
+        android:textAllCaps="false"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/navigation_UserState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_UserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/new_font"
+        android:textColor="#0C0C0C"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/navigation_UserState"
+        android:layout_marginTop="5dp"
+        android:background="#B5E2D5D5" />
+
+
+
+</RelativeLayout>
